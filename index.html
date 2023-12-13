@@ -211,7 +211,7 @@
             })
             .then(data => {
                 if (data && data.newCount !== undefined) {
-                    document.getElementById('count').innerText = `Count: ${data.newCount}`;
+                    document.getElementById('count').innerText = `Visitor's count: ${data.newCount}`;
                 } else {
                     throw new Error('newCount not found in API response');
                 }
