@@ -15,9 +15,9 @@ import hr from "../assets/curve-hr.svg"
     
 export default function Skills() {
     return (
-        <div id="skills" className="mt-4 text-white text-center" style={{ fontFamily: 'JetBrains Mono'}}>
-            <h1 className="text-2xl font-bold">Skills</h1>
-            <p className="font-light text-gray-400">Here are some of my skills</p>
+        <div id="skills" className="mt-6 text-white text-center" style={{ fontFamily: 'JetBrains Mono'}}>
+           <h1 className="text-2xl font-bold">Skills</h1>
+            <p className="mt-4 font-light text-gray-400">Here are some of the technologies i've worked with</p>
 
             <ul className="mt-4 grid grid-cols-6 gap-10">
                 <li className="text-center">

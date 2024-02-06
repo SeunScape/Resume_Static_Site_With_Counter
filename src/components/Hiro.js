@@ -1,15 +1,36 @@
-import {useState} from 'react'
-
-import profile from '../assets/profile.svg';
+import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faCircleArrowRight, } from "@fortawesome/free-solid-svg-icons";
-import {  faGithub, faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import {  faGithub, faInstagram, faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import hr from '../assets/curve-hr.svg'
 import '../animated.css'
-import arrow from '../assets/down-arrow-download-svgrepo-com.svg'
-export default function Hiro () {
 
-    // const [loaded, setLoaded] = useState(true);
+    const Hiro = () => {
+        const [count, setCount] = useState('');
+        useEffect(() => {
+            const fetchData = async () => {
+                try {
+                    const response = await fetch('https://eugc6sr4sl.execute-api.us-east-1.amazonaws.com/Prod/counter');
+    
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+    
+                    const data = await response.json();
+    
+                    if (data && data.newCount !== undefined) {
+                        setCount(`Visitor's count: ${data.newCount}`);
+                    } else {
+                        throw new Error('newCount not found in API response');
+                    }
+                } catch (error) {
+                    console.error('Error fetching count:', error);
+                    setCount('Count: N/A');
+                }
+            };
+    
+            fetchData();
+        }, []);
 
     return (
         <>
@@ -20,37 +41,41 @@ export default function Hiro () {
             :
             null
         } */}
-        <div id="home" className="flex w-full h-screen flex-col md:flex-row gap-5 items-center justify-center text-white relative">
+        <div id="home" className="flex flex-col items-center justify-center" style={{ fontFamily: 'JetBrains Mono'}}>
+        <div className="flex w-full h-screen flex-col md:flex-row gap-5 items-center justify-center text-white relative">
             <div className='md:w-3/6 md:p-4'>
                 <img src="/bg2.png"/>
             </div>
-            <div className='md:w-3/6' data-aos="fade-right" data-aos-duration="1000" data-aos-offset="100" style={{ fontFamily: 'JetBrains Mono'}}>
+            <div className='md:w-3/6' data-aos="fade-right" data-aos-duration="1000" data-aos-offset="100">
                 <div className="flex flex-col w-full mt-8">
                     <h1 className="text-xl text-gray-400">Hello, </h1>
                     <h1 className="text-2xl font-bold">I'm  Seun Alabi</h1>
                     <div className='animated-text'>
                         <span></span>
                     </div>
-                    <p className="text-md font-light text-gray-400 ">Enthusiastic and motivated self-learning in Information Technology. Interested in exploring about Computer Network, Cloud Computing, DevSecops, and Web Development. Now I am looking for more experience in my field.</p>
+                    <p className="text-md font-light text-gray-400 ">With a deep connection to Information Technology and a background in computer science, I have explored various aspects of software development, including frontend, backend, devops, cloud computing, and serverless architecture. Certified by AWS and Cisco, I bring skill set in networking, database & security. Currently seeking opportunities to gain valuable experience in my field </p>
                 </div>
-                <a href='http://blog.dama.zip' className='mt-2 block'>Read My Blog <FontAwesomeIcon className='ml-2' icon={faCircleArrowRight}/> </a>
                 
                 <ul className='flex mt-2 gap-4 items-center'>
                    <li>
-                        <a href='https://github.com/radendi' rel="noreferrer" target="_blank"><FontAwesomeIcon size='2xl' icon={faGithub} /></a>
+                        <a href='https://github.com/SeunScape/' rel="noreferrer" target="_blank"><FontAwesomeIcon size='2xl' icon={faGithub} /></a>
                    </li> 
+                    {/* <li>
+                        <a href='https://twitter.com/blerix_' rel="noreferrer" target="_blank"><FontAwesomeIcon size='2xl' icon={faTwitter} /></a>
+                    </li> */}
                     <li>
-                        <a href='https://instagram.com/damaasth' rel="noreferrer" target="_blank"><FontAwesomeIcon size='2xl' icon={faInstagram} /></a>
-                    </li>
-                    <li>
-                        <a href='htps://linkedin.com/damasukma' rel="noreferrer" target="_blank"><FontAwesomeIcon size='2xl' icon={faLinkedinIn} /></a>
+                        <a href='https://www.linkedin.com/in/seun-alabi-9090041b1/' rel="noreferrer" target="_blank"><FontAwesomeIcon size='2xl' icon={faLinkedinIn} /></a>
                     </li>
                 </ul>
             </div>
-            
+        </div>
+            <div id="count" style={{color:'white'}} className=" absolute bottom-20">
+            {count}
+            </div>
             <img src={hr} className="w-full md:h-2 absolute bottom-0" alt="hr" />
             {/* <img src= {arrow} alt={"javascript"} className="mx-auto mb-2" width="70" height="70"/> */}
         </div>
         </>
     )
 }
+export default Hiro;

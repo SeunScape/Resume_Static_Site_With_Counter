@@ -1,34 +1,30 @@
 import CertCard from "./CertCard.js"
 
 import hr from "../assets/curve-hr.svg"
-import mtcna from "../assets/certs/mtcna.jpg"
-import adinusa from "../assets/certs/adinusa.png"
-import dicodingAws from "../assets/certs/dicoding-aws.png"
-import dicodingJs from "../assets/certs/dicoding-js.png"
-import dicodingNetwork from "../assets/certs/dicoding-network.png"
-import progateHtml from "../assets/certs/progate-htmlcss.png"
-import progateJs from "../assets/certs/progate-js.png"
-import fccResponsive from "../assets/certs/fcc-responsive.png"
 
 // import 
 
 export default function Certs(){
     return (
-        <div id="certs" className="mt-4 text-white">
-            <h1 className="text-2xl font-bold">Certifications</h1>
-            <p className="font-light text-gray-400">Here are some of my Certifications</p>
+        <div id="certs" className="mt-20 text-white" style={{ fontFamily: 'JetBrains Mono'}}>
+            <h1 className="text-2xl font-bold text-center">Projects</h1>
+            <p className="font-light text-gray-400 text-center">Here are some of my Projects, view more on my <span><a href="">GitHub</a></span></p>
 
-            {/* <div className="flex flex-col md:flex-row flex-wrap mt-4 gap-5"> */}
-            <div className="grid grid-cols-1 md:grid-cols-3 justify-center mt-4 gap-5">
-                <CertCard name="Bootcamp Btech Academy Cloud Engineer" img={adinusa} issued="Adinusa" date="Jul 2022" />
-                <CertCard name="Mikrotik Certfied Network Associate" img={mtcna} issued="Mikrotik" date="Jun 2022" />
-                <CertCard name="Cloud Practitioner Essentials" img={dicodingAws} issued="Dicoding Indonesia" date="Feb 2022" />
-                <CertCard name="Dasar Pemprograman Javascript" img={dicodingJs} issued="Dicodig Indonesia" date="Mei 2021" />
-                <CertCard name="Jaringan Komputer untuk Pemula" img={dicodingNetwork} issued="Dicodig Indonesia" date="Jan 2023" />
-                <CertCard name="Responsive Web Design " img={fccResponsive} issued="Dicodig Indonesia" date="Dec 21" />
-                <CertCard name="Kursus Javascript" img={progateJs} issued="Progate" date="Oct 2020" />
-                <CertCard name="Kursus HTML & CSS" img={progateHtml} issued="Progate" date="Oct 2020" />
-
+            <div className="grid grid-cols-1 md:grid-cols-2 justify-start mt-4 gap-5">
+                <CertCard 
+                    name="Project 1: The Cloud Resume Challenge" 
+                    date="December 2023 - January 2024" 
+                    desc={"I deployed a React app on Amazon S3 and delivered it using CloudFront, with the Origin Access Identity (OAI) set to redirect connections from HTTP to HTTPS to ensure security. \n\n I purchased and configured a custom domain using a my names on Route 53 and created an SSL certificate from AWS Certificate Manager. Next, I set up a CloudFront distribution with S3 as the origin, pointing the domain to the cloudfront distribution. Created pipeline for frontend CI/CD in CodePipeline to deploy code to the S3 bucket and pushing to git. \n\n For the backend, I employed the AWS SAM CLI to create a visitor's counter, handling DynamoDB, Lambda functions, tests, and API Gateway. I used Python for lambda functions, Github Actions for backend CI/CD, and Cypress for end-to-end testing"}
+                    link= {<a href="https://github.com/SeunScape/AWS_SAM_LAMBDA_API_GATEWAY">here</a>}
+                    />
+                    
+                    <CertCard 
+                    name="Project 2: Flippay" 
+                    date="December 2022" 
+                    issued="Project 1"
+                    desc={"I developed a static site and dashboard for a company specializing in cryptocurrency and gift card management. My primary focus was on the frontend, collaborating closely with a backend developer who provided the necessary documentation. \n\n To handle authentication and display user data on the dashboard, I integrated the Auth API and User API respectively. Leveraging React.js and Material UI, I designed the frontend pages with a modern and user-friendly interface. \n\nThis project provided valuable experience in working with APIs, allowing me to gain practical insights into integrating external services seamlessly into frontend development."}
+                    link= {<a href="https://github.com/SeunScape/AWS_SAM_LAMBDA_API_GATEWAY">here</a>}
+                    />
             </div>
             <img src={hr} className="w-full mt-8 md:h-2" alt="hr" />
         </div>
