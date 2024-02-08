@@ -1,5 +1,5 @@
 import logo from '../assets/logofile.jpg';
-import resume from "../assets/resume.pdf"
+// import resume from "../assets/resume.pdf"
 
 export default function Navbar() {
     return (
@@ -12,7 +12,7 @@ export default function Navbar() {
             <li className="p-4"><a href="#certs" className="hover:underline">Certfications</a></li>
             <li className="p-4"><a href="#certs" className="hover:underline">Projects</a></li>
             </ul>
-            <a href={resume} rel="noreferrer" target="_blank" className=" bg-teal-500 rounded-full px-4 py-1 border border-teal-800 border border-4">Resume</a>
+            <a rel="noreferrer" target="_blank" className=" bg-teal-500 rounded-full px-4 py-1 border border-teal-800 border border-4">Resume</a>
         </div>
     </div>
     )

@@ -12,7 +12,7 @@ import 'aos/dist/aos.css';
 
 function App() {
     useEffect(() => {
-      document.title = 'Seun Alabi';
+      document.title = "Seun Alabi's Portfolio";
       AOS.init();
     }, []);
   return (
