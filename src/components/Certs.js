@@ -8,7 +8,7 @@ export default function Certs(){
     return (
         <div id="certs" className="mt-20 text-white" style={{ fontFamily: 'JetBrains Mono'}}>
             <h1 className="text-2xl font-bold text-center">Projects</h1>
-            <p className="font-light text-gray-400 text-center">Here are some of my Projects, view more on my <span><a href="">GitHub</a></span></p>
+            <p className="font-light text-gray-400 text-center">Here are some of my Projects, view more on my <span><a href="" className="text-teal-500">GitHub</a></span></p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 justify-start mt-4 gap-5">
                 <CertCard 
@@ -23,7 +23,7 @@ export default function Certs(){
                     date="December 2022" 
                     issued="Project 1"
                     desc={"I developed a static site and dashboard for a company specializing in cryptocurrency and gift card management. My primary focus was on the frontend, collaborating closely with a backend developer who provided the necessary documentation. \n\n To handle authentication and display user data on the dashboard, I integrated the Auth API and User API respectively. Leveraging React.js and Material UI, I designed the frontend pages with a modern and user-friendly interface. \n\nThis project provided valuable experience in working with APIs, allowing me to gain practical insights into integrating external services seamlessly into frontend development."}
-                    link= {<a href="https://github.com/SeunScape/AWS_SAM_LAMBDA_API_GATEWAY">here</a>}
+                    link= {<a href="">here</a>}
                     />
             </div>
             <img src={hr} className="w-full mt-8 md:h-2" alt="hr" />

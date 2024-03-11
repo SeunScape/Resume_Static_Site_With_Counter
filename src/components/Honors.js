@@ -19,9 +19,9 @@ export default function Honors(){
                 </div>
 
                 <div className="md:w-1/2">
-                    <img src="/image.png" alt="Certification 1" className="w-40 md:max-w-xs h-auto mb-4 md:mb-0 mx-auto" />
-                    <p className="text-center">AWS Cloud Quest: Cloud Practitioner</p>
-                    <div>View credential <span className="text-teal-500"><a href="https://www.linkedin.com/posts/seun-alabi-9090041b1_aws-cloud-quest-cloud-practitioner-was-issued-activity-7120435316011798530-V88r?utm_source=share&utm_medium=member_desktop">here</a></span></div>
+                    <img src="/AWS-Certified-Solutions-Architect-Associate_badge.png" alt="Certification 1" className="w-40 md:max-w-xs h-auto mb-4 md:mb-0 mx-auto" />
+                    <p className="text-center">AWS Certified Solutions Architect - Associate Certification</p>
+                    <div>View credential <span className="text-teal-500"><a href="https://www.credly.com/badges/4bc24bc8-e68e-44a3-952e-810ee84e81da/public_url">here</a></span></div>
                 </div>
             </div>
             <a href="https://drive.google.com/file/d/1Mk5-f3qjU8p-b91kBAN1dsYY2cPt41RN/view">

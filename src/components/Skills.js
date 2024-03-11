@@ -30,7 +30,7 @@ export default function Skills() {
                 <li className="text-center">
                     <img src={bash} alt={"bash"} className="mx-auto mb-2 w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-24 xl:h-24" />
                     <p>Bash</p>
-                </li>
+                </li>    
                 <li className="text-center">
                     <img src={git} alt={"git"} className="mx-auto mb-2 w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-24 xl:h-24" />
                     <p>Git</p>

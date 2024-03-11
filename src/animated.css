@@ -2,6 +2,8 @@
     font-size: 28px;
     font-weight: 600;
     min-width: 280px;
+    position: relative;
+    display: inline-flex;;
 }
 
 .animated-text span {
@@ -24,7 +26,11 @@
     right: -8px;
     animation: cursor .8s infinite, typing 20s steps(14) infinite;
 }
-
+.engineer-text {
+    position: absolute;
+    top: 0;
+    left: calc(100% - 620px); 
+}
 @keyframes cursor {
     to {
         border-left: 2px solid #ff7f5000;
@@ -33,19 +39,19 @@
 
 @keyframes words {
     0%,20%{
-        content: "Software Developer";
+        content: "Software";
     }
     21%,40%{
-        content: "Cloud Engineer";
+        content: "Cloud";
     }
     41%,60%{
-        content: "Software Developer";
+        content: "Software";
     }
     61%,80%{
-        content: "Cloud Engineer";
+        content: "Cloud";
     }
     81%,100%{
-        content: "Software Developer";
+        content: "Software";
     }
 }
 @keyframes typing {
