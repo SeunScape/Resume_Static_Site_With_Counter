@@ -52,7 +52,7 @@ import '../animated.css'
                         <h1 className="text-xl text-gray-400">Hello, </h1>
                         <h1 className="text-2xl font-bold">I'm  Seun Alabi</h1>
                         <div className='animated-text'>
-                            <span></span>    <div className="engineer-text">Engineer</div>
+                            <span></span> 
                         </div>
                         <p className="text-md font-light text-gray-400 ">With a deep connection to Information Technology and a background in computer science, I have explored various aspects of software development, including frontend, backend, devops, cloud computing, and serverless architecture. Certified by AWS and Cisco, I bring skill set in networking, database & security. Currently seeking opportunities to gain valuable experience in my field </p>
                     </div>
