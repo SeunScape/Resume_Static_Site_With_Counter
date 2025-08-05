@@ -28,10 +28,10 @@ export default function Skills() {
                 </div>
 
                 {/* Skills List Section */}
-                <div className="flex justify-center mb-16">
-                    <div className="bg-gray-800/50 rounded-xl p-8 border border-gray-700 shadow-lg backdrop-blur-sm">
+                <div className="flex justify-center mb-16 px-4">
+                    <div className="bg-gray-800/50 rounded-xl p-4 sm:p-8 border border-gray-700 shadow-lg backdrop-blur-sm w-full max-w-2xl">
                         <ul className="list-none text-left space-y-4 text-gray-200">
-                            <li className="flex items-center gap-2">
+                            <li className="flex flex-wrap items-center gap-2 text-sm sm:text-base">
                                 <span className="h-2 w-2 bg-blue-500 rounded-full"></span>
                                 <strong className="text-blue-400">Cloud Platforms:</strong> 
                                 <span>AWS, Azure</span>

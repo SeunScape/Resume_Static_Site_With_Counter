@@ -51,8 +51,8 @@ import '../animated.css'
                                 <ul className="list-disc list-inside text-gray-200 space-y-1">
                                       <li><strong> 2X AWS Certified</strong> professional, skillful in cost-optimized cloud architecture and infrastructure as code</li>
                                     <li>1+ years of <strong>IT experience</strong> handling server maintenance, IT support, and network troubleshooting</li>
-                                    <li>Built <strong>practical projects</strong> and cloud solutions demonstrating proficiency in automation, CI/CD pipelines, and cloud infrastructure  </li>
-                                    <li>Comfortable with <strong>Linux</strong>, Bash scripting, and AWS CLI for cloud resource management.</li>
+                                    <li>Built <strong>practical projects</strong> and solutions that solves real problems using cloud-native and AI tools  </li>
+                                    <li>Comfortable with <strong>Linux</strong>, Bash scripting, and Python used in cloud servers and automation</li>
                                     <li>Actively <strong>volunteering</strong> at tech meetups, AWS Cloud Club events, and builder community events</li>
                                 </ul>
                             </div>
