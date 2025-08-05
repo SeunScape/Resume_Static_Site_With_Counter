@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  faGithub, faLinkedinIn} from "@fortawesome/free-brands-svg-icons";
+import {  faGithub, faLinkedinIn, faTwitter} from "@fortawesome/free-brands-svg-icons";
 import hr from '../assets/curve-hr.svg'
 import '../animated.css'
 
@@ -33,51 +33,48 @@ import '../animated.css'
 
     return (
         <>
-        {/* {loaded ?
-        <div
-            className="fixed top-0 left-0 right-0 bottom-0 w-full h-screen z-50 overflow-hidden bg-white flex flex-col items-center justify-center"
-        >Loading...</div>
-            :
-            null
-        } */}
-        <div id="home" className="flex flex-col items-center justify-center" style={{ fontFamily: 'JetBrains Mono'}}>
-            <div className="flex w-full min-h-screen flex-col md:flex-row gap-5 items-center justify-center text-white">
-                <div className='md:w-3/6 md:p-4'>
-                    {/* Display different images based on viewport size */}
-                    <img src="/bg2.png" className="hidden md:block" alt="Background Desktop"/>
-                    <img src="/profilepic.jpeg" className="block md:hidden rounded-full w-40 h-40" alt="Your Picture Mobile"/>
-                </div>
-                <div className='md:w-3/6' data-aos="fade-right" data-aos-duration="1000" data-aos-offset="100">
-                    <div className="flex flex-col w-full mt-8">
-                        <h1 className="text-xl text-gray-400">Hello, </h1>
-                        <h1 className="text-2xl font-bold">I'm  Seun Alabi</h1>
-                        <div className='animated-text'>
-                            <span></span> 
+            <div id="home" className="flex flex-col items-center justify-center" style={{ fontFamily: 'JetBrains Mono'}}>
+                <div className="flex w-full h-[90vh] flex-col md:flex-row gap-5 items-center justify-center text-white">
+                    <div className='md:w-3/6 md:p-4'>
+                        <img src="/bg2.png" className="hidden md:block max-h-[80vh]" alt="Background Desktop"/>
+                    </div>                    
+                    <div className='md:w-3/6' data-aos="fade-right" data-aos-duration="1000" data-aos-offset="100">
+                        <div className="flex flex-col w-full">
+                            <h1 className="text-xl text-gray-400">Hello, </h1>
+                            <h1 className="text-2xl font-bold mb-2" style={{ color: '#F27F3D' }}>I'm Seun Alabi</h1>
+                            <p className="text-gray-300 mb-4">
+                                I am driven and curious about how innovative technology is used to solve everyday problems. 
+                                I'm skilled in cloud services and solutions, and in the deployment and management of workloads in the cloud.
+                            </p>
+                            <div className="mt-2 shadow-lg">
+                                <h3 className="text-lg font-semibold mb-2" style={{ color: '#F27F3D' }}>Achievements</h3>
+                                <ul className="list-disc list-inside text-gray-200 space-y-1">
+                                      <li><strong> 2X AWS Certified</strong> professional, skillful in cloud architecture and infrastructure as code</li>
+                                    <li>1+ years of <strong>IT experience</strong> handling server maintenance, IT support, and network troubleshooting</li>
+                                    <li>Built <strong>practical projects</strong> and cloud solutions demonstrating proficiency in automation, CI/CD pipelines, and cloud infrastructure  </li>
+                                    <li>Comfortable with <strong>Linux</strong>, Bash scripting, and AWS CLI for cloud resource management.</li>
+                                    <li>Actively <strong>volunteering</strong> at tech meetups, AWS Cloud Club events, and builder community events</li>
+                                </ul>
+                            </div>
+                            <ul className='flex mt-2 gap-4 items-center'>
+                                <li>
+                                    <a href='https://github.com/SeunScape/' rel="noreferrer" target="_blank"><FontAwesomeIcon size='xl' icon={faGithub} /></a>
+                                </li>
+                                <li>
+                                    <a href='https://www.linkedin.com/in/seun-alabi-9090041b1/' rel="noreferrer" target="_blank"><FontAwesomeIcon size='xl' icon={faLinkedinIn} /></a>
+                                </li>
+                                <li>
+                                    <a href='https://x.com/rixblues' rel="noreferrer" target="_blank"><FontAwesomeIcon size='xl' icon={faTwitter} /></a>
+                                </li>
+                            </ul>
                         </div>
-                        <p className="text-md font-light text-gray-400 ">With a deep connection to Information Technology and a background in computer science, I have explored various aspects of software development, including frontend, backend, devops, cloud computing, and serverless architecture. Certified by AWS and Cisco, I bring skill set in networking, database & security. Currently seeking opportunities to gain valuable experience in my field </p>
                     </div>
-                    
-                    <ul className='flex mt-2 gap-4 items-center'>
-                        <li>
-                            <a href='https://github.com/SeunScape/' rel="noreferrer" target="_blank"><FontAwesomeIcon size='2xl' icon={faGithub} /></a>
-                        </li> 
-                        {/* <li>
-                            <a href='https://twitter.com/blerix_' rel="noreferrer" target="_blank"><FontAwesomeIcon size='2xl' icon={faTwitter} /></a>
-                        </li> */}
-                        <li>
-                            <a href='https://www.linkedin.com/in/seun-alabi-9090041b1/' rel="noreferrer" target="_blank"><FontAwesomeIcon size='2xl' icon={faLinkedinIn} /></a>
-                        </li>
-                    </ul>
                 </div>
+                <div id="count" style={{color:'white'}} className="mb-2">
+                    {count}
+                </div>
+                <img src={hr} className="w-full md:h-2" alt="Horizontal Rule" />
             </div>
-            <div id="count" style={{color:'white'}} className="mb-8">
-                {count}
-            </div>
-            <img src={hr} className="w-full md:h-2" alt="Horizontal Rule" />
-            {/* <img src= {arrow} alt={"javascript"} className="mx-auto mb-2" width="70" height="70"/> */}
-        </div>
-
-
         </>
     )
 }

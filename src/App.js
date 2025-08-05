@@ -19,8 +19,8 @@ function App() {
     <div className="px-6 lg:px-20 xl:px-36 bg-black">
       <Navbar />
       <Hiro />
-      <Skills />
       <Honors />
+      <Skills />
       <Certs />
       <Footer />
     </div>
