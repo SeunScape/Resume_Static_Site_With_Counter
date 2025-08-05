@@ -49,7 +49,7 @@ import '../animated.css'
                             <div className="mt-2 shadow-lg">
                                 <h3 className="text-lg font-semibold mb-2" style={{ color: '#F27F3D' }}>Achievements</h3>
                                 <ul className="list-disc list-inside text-gray-200 space-y-1">
-                                      <li><strong> 2X AWS Certified</strong> professional, skillful in cloud architecture and infrastructure as code</li>
+                                      <li><strong> 2X AWS Certified</strong> professional, skillful in cost-optimized cloud architecture and infrastructure as code</li>
                                     <li>1+ years of <strong>IT experience</strong> handling server maintenance, IT support, and network troubleshooting</li>
                                     <li>Built <strong>practical projects</strong> and cloud solutions demonstrating proficiency in automation, CI/CD pipelines, and cloud infrastructure  </li>
                                     <li>Comfortable with <strong>Linux</strong>, Bash scripting, and AWS CLI for cloud resource management.</li>
