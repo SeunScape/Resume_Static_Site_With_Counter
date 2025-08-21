@@ -1,11 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.66cfc1a9.css",
-    "main.js": "/static/js/main.2ea372e7.js",
+    "main.css": "/static/css/main.7650c9b3.css",
+    "main.js": "/static/js/main.b5fc43b8.js",
     "static/js/787.a7249224.chunk.js": "/static/js/787.a7249224.chunk.js",
     "static/media/ciscoCert.png": "/static/media/ciscoCert.17852a04d798db1d8064.png",
     "static/media/linux.svg": "/static/media/linux.ff969ad1bae76cb9a7cc6aca65fd15f5.svg",
-    "static/media/logofile.jpg": "/static/media/logofile.661bbe82ac2092c98521.jpg",
     "static/media/react.svg": "/static/media/react.e27571eaed899c642345e71163624ef9.svg",
     "static/media/bash.svg": "/static/media/bash.31469aae70b8e95103fe760027703efa.svg",
     "static/media/nodejs.svg": "/static/media/nodejs.3dc364b8e9beb3561620274aea4f0844.svg",
@@ -15,16 +14,16 @@
     "static/media/javascript.svg": "/static/media/javascript.fd46ca41839433d73577989d86eb2fe2.svg",
     "static/media/curve-hr.svg": "/static/media/curve-hr.16b9fca607ca7942b81f2887bc2dae79.svg",
     "static/media/tailwind.svg": "/static/media/tailwind.50fbcf516b9a3774e9a83272167059ae.svg",
-    "static/media/mongodb-svgrepo-com.svg": "/static/media/mongodb-svgrepo-com.bfa6cdd80f4a99232cadb39ebbb976d2.svg",
     "index.html": "/index.html",
+    "static/media/mongodb-svgrepo-com.svg": "/static/media/mongodb-svgrepo-com.bfa6cdd80f4a99232cadb39ebbb976d2.svg",
     "static/media/terraform-icon-svgrepo-com.svg": "/static/media/terraform-icon-svgrepo-com.a2330b8d96c9f9b8c3457335ca5469f9.svg",
     "static/media/windows.svg": "/static/media/windows.680a11acd0ab401f69e83c7caba17dc0.svg",
-    "main.66cfc1a9.css.map": "/static/css/main.66cfc1a9.css.map",
-    "main.2ea372e7.js.map": "/static/js/main.2ea372e7.js.map",
+    "main.7650c9b3.css.map": "/static/css/main.7650c9b3.css.map",
+    "main.b5fc43b8.js.map": "/static/js/main.b5fc43b8.js.map",
     "787.a7249224.chunk.js.map": "/static/js/787.a7249224.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.66cfc1a9.css",
-    "static/js/main.2ea372e7.js"
+    "static/css/main.7650c9b3.css",
+    "static/js/main.b5fc43b8.js"
   ]
 }
