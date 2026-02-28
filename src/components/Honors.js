@@ -4,9 +4,20 @@ import ciscoCert from "../assets/certs/ciscoCert.png"
 
 export default function Honors(){
     return (
-        <div id="honors" className="mt-12 sm:mt-16 md:mt-20 text-white text-center px-4 sm:px-6 lg:px-8" style={{ fontFamily: 'JetBrains Mono'}}> 
-            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold">Certifications</h1>
-            <p className="font-light text-gray-400 text-sm sm:text-base mt-2">Here are some of my certifications</p>
+        <div id="honors" className="py-12 text-white text-center px-4 sm:px-6 lg:px-8" style={{ fontFamily: 'JetBrains Mono'}}> 
+            <div className="relative z-10 text-center mb-10">
+                <h2 className="font-black text-4xl sm:text-5xl uppercase tracking-tighter text-white mb-4">
+                    My{' '}
+                    <span style={{ color: '#00f2ff', textShadow: '0 0 25px rgba(0,242,255,0.5)' }}>
+                        Certifications
+                    </span>
+                    <span style={{ color: '#00f2ff' }}>_</span>
+                </h2>
+                <p className="text-gray-400 text-sm sm:text-base mb-2">
+                    Here are some of my certifications.
+                </p>
+                <div className="h-1 w-24 mx-auto rounded-full opacity-50 mt-4" style={{ backgroundColor: '#00f2ff' }} />
+            </div>
 
             <div id="certifications" className="flex flex-col items-center justify-center mt-6 sm:mt-8 mx-auto max-w-6xl">
                 <div className="flex flex-col md:flex-row gap-6 sm:gap-8 items-center justify-center">
@@ -50,7 +61,7 @@ export default function Honors(){
                 </a>
             </div>
 
-            <img src={hr} className="w-full mt-6 sm:mt-8 md:mt-10 h-1 sm:h-2" alt="hr" />
+            <img src={hr} className="w-full mt-6 md:h-2" alt="hr" />
         </div>
     )
 }

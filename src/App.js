@@ -4,24 +4,29 @@ import Navbar from './components/Navbar';
 import Hiro from './components/Hiro';
 import Skills from './components/Skills'
 import Honors from './components/Honors';
-import Certs from './components/Certs';
+import Certs from './components/Projects';
 import Footer from './components/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import About from './components/About';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 
 function App() {
     useEffect(() => {
-      document.title = "Seun Alabi's Portfolio";
+      document.title = "Seun Alabi - Cloud & DevOps Engineer Portfolio";
       AOS.init();
     }, []);
   return (
-    <div className="px-6 lg:px-20 xl:px-36 bg-black">
+    <div className="relative bg-[#0a0a0a] min-h-screen overflow-x-hidden">
       <Navbar />
       <Hiro />
-      <Honors />
+      <About/>
+      <Projects />
       <Skills />
-      <Certs />
+      <Honors />
+      <Contact/>
       <Footer />
     </div>
   );
