@@ -104,7 +104,7 @@ const Hiro = () => {
                     </div>
 
                     {/* CTA Buttons */}
-                    <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4 mb-12 w-full sm:w-auto">
+                    <div className="flex flex-row items-center justify-center gap-3 sm:gap-4 mb-12">
                         <a
                             href="#projects"
                             className="text-center px-6 py-3 font-bold text-sm tracking-wide uppercase rounded transition-all duration-300 hover:-translate-y-1"

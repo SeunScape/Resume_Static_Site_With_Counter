@@ -113,7 +113,7 @@ const About = () => {
                                 className="inline-block px-3 py-1 rounded text-xs font-bold mb-4 uppercase tracking-widest border"
                                 style={{ color: '#00f2ff', backgroundColor: 'rgba(0,242,255,0.08)', borderColor: 'rgba(0,242,255,0.2)' }}
                             >
-                                Cloud/DevOps Engineer
+                                infrastructure
                             </span>
                             <h3 className="text-2xl sm:text-3xl font-bold text-white leading-tight mb-4">
                                Building Scalable Infrastructure
