@@ -116,19 +116,19 @@ const About = () => {
                                 infrastructure
                             </span>
                             <h3 className="text-2xl sm:text-3xl font-bold text-white leading-tight mb-4">
-                               Building Scalable Infrastructure
+                               Building Secure, Scalable Infrastructure
                             </h3>
 
                             {/* Bio paragraphs — replace with your real text */}
                             <div className="space-y-3 text-gray-400 leading-relaxed text-sm">
                                 <p>
-                                   I am a Cloud and DevOps Engineer with hands-on experience designing, implementing, and managing scalable infrastructure across AWS and Azure. I work across the full infrastructure lifecycle — provisioning with Terraform and CloudFormation, orchestrating containerized workloads with Kubernetes, and building CI/CD pipelines that deliver reliably and fast.
+                                   I am a Cloud and DevOps Engineer with hands-on experience designing, implementing, and securing scalable infrastructure across AWS and Azure. I work across the full infrastructure lifecycle: provisioning with Terraform and CloudFormation, orchestrating containerized workloads with Kubernetes, and building DevSecOps pipelines that ship reliably, with security built into CI/CD from the start rather than bolted on later.
                                 </p>
                                 <p>
-                                    Through my IT consultancy work, I have contributed to modernization, hybrid cloud, and multi-cloud projects for enterprises looking to scale and strengthen the resilience of their systems. I also have hands-on experience with post-deployment infrastructure management in co-location data centers, and securing cloud environments using CNAPPs including Trend Micro and Palo Alto to enforce compliance and protect cloud networks.
+                                    Much of my recent work sits where cloud meets security. I scope requirements with customers, design solution architectures, and carry them through to deployment, configuring, testing, and hardening environments against real-world threats. I have deployed and supported enterprise security platforms including Trend Micro, Palo Alto Networks, and Fortinet, running post-deployment health checks, security audits, and Level 2/3 support to keep systems compliant and resilient.
                                 </p>
                                 <p>
-                                    I hold an AWS Certified Solutions Architect certification, a Bachelor's degree in Computer Science, and I currently teach cloud computing, helping the next generation of engineers build practical skills in the field. I am always learning, always building, and looking to contribute to a team doing meaningful work at scale.
+                                    I hold three AWS certifications (Cloud Practitioner, Solutions Architect Associate, and Security Specialty) alongside a Bachelor's degree in Computer Science. I also teach cloud computing, helping the next generation of engineers build practical skills in the field. I am always learning, always building, and looking to bring both architectural depth and a security-first mindset to a team doing meaningful work at scale.
                                 </p>
                             </div>
                         </div>
@@ -139,7 +139,7 @@ const About = () => {
                             style={{ borderColor: 'rgba(255,255,255,0.07)' }}
                         >
                             {[
-                                { value: 'AWS', label: 'Certified Associate' },
+                                { value: '3x', label: 'AWS Certified' },
                                 { value: '99.9%', label: 'Uptime Record' },
                                 { value: '3yr+', label: 'Experience' },
                                 { value: '∞', label: 'Deployments' },

@@ -21,11 +21,11 @@ export default function Honors(){
 
             <div id="certifications" className="flex flex-col items-center justify-center mt-6 sm:mt-8 mx-auto max-w-6xl">
                 <div className="flex flex-col md:flex-row gap-6 sm:gap-8 items-center justify-center">
-                    <div className="w-full md:w-1/2 max-w-sm md:max-w-none">
-                        <img 
-                            src="/AWS-Certified-Cloud-Practitioner_badge.634f8a21af2e0e956ed8905a72366146ba22b74c.png" 
-                            alt="AWS Cloud Practitioner Certification" 
-                            className="w-32 sm:w-36 md:w-40 lg:w-48 h-auto mb-3 sm:mb-4 mx-auto" 
+                    <div className="w-full md:w-1/3 max-w-sm md:max-w-none">
+                        <img
+                            src="/AWS-Certified-Cloud-Practitioner_badge.634f8a21af2e0e956ed8905a72366146ba22b74c.png"
+                            alt="AWS Cloud Practitioner Certification"
+                            className="w-32 sm:w-36 md:w-40 lg:w-48 h-auto mb-3 sm:mb-4 mx-auto"
                         />
                         <p className="text-center text-sm sm:text-base font-medium mb-2">AWS Certified Cloud Practitioner</p>
                         <div className="text-xs sm:text-sm text-gray-300 mb-1">
@@ -36,15 +36,27 @@ export default function Honors(){
                         </div>
                     </div>
 
-                    <div className="w-full md:w-1/2 max-w-sm md:max-w-none">
-                        <img 
-                            src="/AWS-Certified-Solutions-Architect-Associate_badge.png" 
-                            alt="AWS Solutions Architect Associate Certification" 
-                            className="w-32 sm:w-36 md:w-40 lg:w-48 h-auto mb-3 sm:mb-4 mx-auto" 
+                    <div className="w-full md:w-1/3 max-w-sm md:max-w-none">
+                        <img
+                            src="/AWS-Certified-Solutions-Architect-Associate_badge.png"
+                            alt="AWS Solutions Architect Associate Certification"
+                            className="w-32 sm:w-36 md:w-40 lg:w-48 h-auto mb-3 sm:mb-4 mx-auto"
                         />
                         <p className="text-center text-sm sm:text-base font-medium mb-2">AWS Certified Solutions Architect - Associate</p>
                         <div className="text-xs sm:text-sm text-gray-300">
                             View credential <span className="text-teal-500"><a href="https://www.credly.com/badges/4bc24bc8-e68e-44a3-952e-810ee84e81da/public_url" className="hover:text-teal-400 transition-colors">here</a></span>
+                        </div>
+                    </div>
+
+                    <div className="w-full md:w-1/3 max-w-sm md:max-w-none">
+                        <img
+                            src="/AWS-Certified-Security-Specialty_badge.png"
+                            alt="AWS Certified Security - Specialty Certification"
+                            className="w-32 sm:w-36 md:w-40 lg:w-48 h-auto mb-3 sm:mb-4 mx-auto"
+                        />
+                        <p className="text-center text-sm sm:text-base font-medium mb-2">AWS Certified Security - Specialty</p>
+                        <div className="text-xs sm:text-sm text-gray-300">
+                            View credential <span className="text-teal-500"><a href="https://www.credly.com/badges/7cfe11d3-0049-47d5-ba3a-462d5b632cb6/public_url" className="hover:text-teal-400 transition-colors">here</a></span>
                         </div>
                     </div>
                 </div>
